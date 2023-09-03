@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-image: url('/sky-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 900px;
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  margin: 0 auto;
+  padding: 7px 10px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 7px 2px #cbcbcb;
+  font-family: 'Inter', sans-serif;
+}
+
+.weatherContainer {
+  width: 100%;
+  border: 3px solid #ddddddb8;
+  border-radius: 9px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.todayForcast {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 300px;
+}
+
+.sun {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.text span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: 400;
+}
